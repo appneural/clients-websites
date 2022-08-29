@@ -1,60 +1,871 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>example.com</title>
-    <style>
-      html, body {
-        height: 100%;
-      }
-      body {
-        background-color: #fff;
-        background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
-        color: #222;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      main {
-        padding: 1rem;
-        text-align: center;
-      }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        margin: 0;
-      }
-      @media screen and (max-width: 480px) {
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
-      h1::after {
-        content: "";
-        background-color: #ffe800;
-        background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-        display: block;
-        height: 0.5rem;
-        margin-top: 1rem;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      p {
-        margin: 1rem 0 0 0;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>example.com</h1>
-      <p>Our website is under construction.</p>
-    </main>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="it">
+  <meta name="keywords" content="WPICS,creative, agency, startup,onepage, clean, modern,business, company,it">
+  
+  <meta name="author" content="themefisher.com">
+
+  <title>WPICS</title>
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- Icon Font css -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <link rel="stylesheet" href="plugins/fonts/Pe-icon-7-stroke.css">
+  <!-- Themify icon Css -->
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body id="top-header">
+
+<!-- LOADER TEMPLATE -->
+<div id="page-loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+    <!-- /LOADER TEMPLATE -->
+
+
+    <div class="logo-bar d-none d-md-block d-lg-block ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo d-none d-lg-block">
+                        <!-- Brand -->
+                        <a class="navbar-brand js-scroll-trigger" href="index.html">
+                          <img src="images/logo.png" />
+                        </a>
+						
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation" id="mainmenu-area">
+                        
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav navbar-togglable rounded-radius">
+                
+                                <a class="navbar-brand d-lg-none d-block" href="">
+                                    
+                                </a>
+                                <!-- Toggler -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fa fa-bars"></span>
+                                </button>
+                
+                                <!-- Collapse -->
+                                <div class="collapse navbar-collapse" id="navbarCollapse">
+                                    <!-- Links -->
+                                    <ul class="navbar-nav ">
+                                     <li class="nav-item ">
+                                            <a href="index.html" class="nav-link js-scroll-trigger">
+                                                Home
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="nav-item dropdown ">
+                                            <a href="#" id="navbarWelcome" class="nav-link js-scroll-trigger dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Data Annotation
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                                                 <a class="dropdown-item " href="image.html">
+                                                    image annotation services
+                                                </a>
+                                                <a class="dropdown-item " href="video.html">
+                                                    Video annotation services
+                                                </a> 
+                                                <a class="dropdown-item " href="text.html">
+                                                    Text annotation services
+                                                </a>
+                                                
+                   
+                                            </div>
+                                        </li>
+                                       <li class="nav-item dropdown ">
+                                            <a href="about.html" id="navbarWelcome" class="nav-link js-scroll-trigger dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Services
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                                                 <a class="dropdown-item " href="Ai data annotation services.html">
+                                                    AI Data Annotation
+                                                </a>
+                                                 
+                                                <a class="dropdown-item " href="Transcription.html">
+                                                    Transcription
+                                                </a> 
+                                                <a class="dropdown-item " href="management.html">
+                                                     Managment Consulting
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown ">
+                                            <a href="#" id="navbarWelcome" class="nav-link js-scroll-trigger dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Solutions
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                                                 <a class="dropdown-item " href="Auto Mobile.html">
+                                                    auto mobile
+                                                </a>
+                                                <a class="dropdown-item " href="Retail.html">
+                                                    retail
+                                                </a> 
+                                                <a class="dropdown-item " href="Robotics.html">
+                                                    robotics
+                                                </a>
+                                                 <a class="dropdown-item " href="E commerce.html">
+                                                    e-commerce
+                                                </a>
+                                                 <a class="dropdown-item " href="Healthcare.html">
+                                                    healthcare
+                                                </a>
+                                                 <a class="dropdown-item " href="Autonomus flying.html">
+                                                    autonomous flying
+                                                </a>
+                                                 <a class="dropdown-item " href="Ai security camera.html">
+                                                    ai security camera
+                                                </a>
+                                                
+                   
+                                            </div>
+                                        </li>
+                                        <li class="nav-item ">
+                      
+                                            <a href="mailto:connect@wpicsbusiness.com" class="nav-link js-scroll-trigger mailtoui">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                
+                                   
+                                </div> <!-- / .navbar-collapse -->
+                            </nav>
+                        </div> <!-- / .container -->
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO
+    ================================================== -->
+    <section class="banner-area py-7">
+        <!-- Content -->
+        <div class="container">
+            <div class="row  align-items-center">
+                <div class="col-md-12 col-lg-7 text-center text-lg-left">
+                    <div class="main-banner">
+                        <!-- Heading -->
+                        <h1 class="display-4 mb-4 font-weight-normal">
+                            Empowering AI with Explicit Data and Image Annotation Services
+
+                        </h1>
+
+                        <!-- Subheading -->
+                        <p class="lead mb-4">
+                            An economical annotation services for machine learning and artificial intelligence companies aspiring high-quality training data for diverse businesses.
+                        </p>
+
+                        <!-- Button -->
+                       
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="banner-img-block image-blurred-edge">
+                        <img src="images/banner-img-5.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+<section class="section" id="projects-wrap">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h1 class="text-white">A Meticulous Annotation Services with Pixel Perfection</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-white">Providing annotated image data for computer vision platforms allowing machines to detect images and compartmentalise the objects in different categories. WPICS makes data labelling possible for multiple industries to develop AI-based functional model work efficiently and error free.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="section bg-grey" id="feature">
+        <div class="container">
+            <div class="row justy-content-center">
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="img-icon-block mb-4">
+                            <img src="images/image/Picture4.png" alt="image" width="70px" height="70px">
+                        </div>
+                        <h4 class="mb-2">QUALITY WITH ACCURACY</h4>
+                        <p>Get the best-in-class quality services with highest accuracy level delivering an excellence in image annotation through multiple stages of auditing and reviewing of labeled data.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="img-icon-block mb-4">
+                            <img src="images/image/Picture5.png" alt="image" width="70px" height="70px">
+                        </div>
+                        <h4 class="mb-2">SECURITY WITH PRIVACY</h4>
+                        <p>The high standards of data security with privacy while working with our clients to ensure their confidentiality.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="img-icon-block mb-4">
+                            <img src="images/image/picture6.png" alt="image" width="70px" height="70px">
+                        </div>
+                        <h4 class="mb-2">FULLY SCALABLE SERVICE</h4>
+                        <p>Working with hundreds of workforce to annotate pictures as per the demand providing a completely scalable solution with turnaround time to meet the different client’ needs.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-md-6">
+                    <div class="text-center feature-block">
+                        <div class="img-icon-block mb-4">
+                            <img src="images/image/picture7.png" alt="image" width="70px" height="70px">
+                        </div>
+                        <h4 class="mb-2">COST-EFFECTIVE PRICING</h4>
+                        <p>Image annotation outsourcing to us means our clients get a cost-effective data labeling service helping them to minimize the cost of their project with best efficiency.</p>
+                    
+					</div>
+                </div>
+            </div>
+        </div> <!-- / .container -->
+    </section>
+
+
+
+    <!-- SERVICE-1
+    ================================================== 
+    <section class="bg-grey" id="service">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4">
+                    <div class="service-img">
+                        <img src="images/blog-lg.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pl-4">
+                    <div class="service-content">
+                        <h1>Get a better deal and start saving money today</h1>
+                        <p>We compare hundreds of leading products and plans across many categories to bring you the best value for money.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 service-wrap">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-8 offset-lg-4">
+                    <div class="carousel slide " id="service-carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="service-block media">
+                                                <div class="service-icon">
+                                                    <i class="ti-reload"></i>
+                                                </div>
+                                                <div class="service-inner-content media-body">
+                                                    <h4>Backup System</h4>
+                                                    <p>Our team are experts in matching you with the right provider.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="service-block media">
+                                                <div class="service-icon">
+                                                    <i class="ti-cloud"></i>
+                                                </div>
+                                                <div class="service-inner-content media-body">
+                                                    <h4>Cloud Hosting</h4>
+                                                    <p>Our team are experts in matching you with the right provider.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="service-block media">
+                                                <div class="service-icon">
+                                                    <i class="ti-world"></i>
+                                                </div>
+                                                <div class="service-inner-content media-body">
+                                                    <h4>Web hosting</h4>
+                                                    <p>Our team are experts in matching you with the right provider.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="service-block media">
+                                                <div class="service-icon">
+                                                    <i class="ti-server"></i>
+                                                </div>
+                                                <div class="service-inner-content media-body">
+                                                    <h4>Office Cloud</h4>
+                                                    <p>Our team are experts in matching you with the right provider.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="pl-3">Want to know more about this? <a href="#">Contact us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+<section class="section" id="process">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <div class="section-heading">
+                        <!-- Heading -->
+                        <h2 class="section-title">
+                            OUR SERVICES
+                        </h2>
+
+                        <!-- Subheading -->
+                        <p>
+                            We are providing image annotation for machine learning using the advance tools and human powered skills to make each image easily recognizable for machines or computer vision. 
+                        </p>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-sm-7 col-md-7">
+                    <div class="process-block">
+                        <img src="images/service/process-1.jpg" alt="" class="img-fluid">
+
+                        <h3>POLYGON ANNOTATION</h3>
+                        <p>Polygon or Polygonal segmentation will help you to annotate irregular or coarse object that are in asymmetrical shapes. It helps to capture the large images like aerial photography for more precise annotation. Annotate your images with bounding polygons with higher-level of precision to build a sharper and correct vision models for aerial imagery.</p>
+                    </div>
+                </div>  
+				<div class="col-lg-5 col-sm-7 col-md-7">
+                    <div class="process-block">
+                        <img src="images/service/process-2.jpg" alt="" class="img-fluid">
+
+                        <h3>BOUNDING BOX</h3>
+                        <p>Outline the objects using bounding boxes for in depth recognition either its humans, cards or other objects on the streets. We use 2D and 3D bounding box annotation tool depending on your quantity and quality of data. We will help you train the autonomous vehicles recognize such objects with proper tagging and classification to ensure the quality.</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+
+<section class="section" id="services-2">
+        <div class="container">
+         
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <i class="ti-vector"></i>
+                        <h3>Polylines Annotation</h3>
+                        <p>Applied into lane detection on roads for autonomous cars and other vehicles to detect the lane and move into the right direction.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <i class="ti-package"></i>
+                        <h3>3D Cuboid Annotation</h3>
+                        <p>Capture the object in 3D cuboid to get the more in-depth dimension view and build a more comprehensive model for detailed info.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-md-6 mb-30">
+                    <div class="web-service-block">
+                        <i class="ti-location-arrow"></i>
+                        <h3>Landmark Annotation</h3>
+                        <p>Plotting a sequence of points correctly to determine the shape of natural objects like facial features, emotions and expressions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--
+<section class="section" id="projects-wrap">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h1 class="text-white">A Precise Annotation Services with Pixel Perfection</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead text-white">Providing the annotated image data for computer vision platforms allowing machines to detect images and classify the objects in different categorize. Anolytics makes data labeling possible for every industries to develop AI-based functional model work properly without any error.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+                    <div class="single-project">
+                        <img src="images/projects/p-1.jpg" alt="" class="img-fluid">
+                        <div class="project-content">
+                            <h4>Project: onepage</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+                    <div class="single-project">
+                        <img src="images/projects/p-4.jpg" alt="" class="img-fluid">
+                        <div class="project-content">
+                            <h4>Project: business</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8 ">
+                    <div class="single-project">
+                        <img src="images/projects/p-3.jpg" alt="" class="img-fluid">
+                        <div class="project-content">
+                            <h4>Project : Marketing</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi consequuntur veniam quod</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-4">
+                <div class="col-lg-7 col-md-12 col-sm-12 ">
+                    <div class="single-project">
+                        <img src="images/bg/banner_bg.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                    <div class="project-content-block">
+                        <h4>Do you know who we are?</h4>
+                        <h2>More than just service your products...</h2>
+                        <p>Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and we will give you a complete account of the system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+<section class="section" id="section-testimonial">
+        <div class="container">
+           <div class="row align-items-center">
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <div class="section-heading testimonial-heading">
+                        <h1 style="text-align:center;">INDUSTRIES</h1>
+                        <p style="text-align:center;">Our Image Annotation service is spread over wide-range of industries working on AI-based or machine learning-based business models. From ecommerce to retail and healthcare, we cover most of them with same level of dedication and quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 col-md-12" style="text-align:center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="test-inner ">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-1.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>Auto Mobile</h4>
+                                    
+                                   </div>
+                               </div>
+
+									 <p>Used for computerized vision learning for autonomous vehicle driving</p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="test-inner ">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-2.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>Health Care</h4>
+									
+								   </div>
+                               </div>
+
+										<p>The diseases diagnosis and analysis through annotated medical imaging</p>
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+						  <div class="col-lg-4">
+                            <div class="test-inner ">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-3.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>AI in Retail</h4>
+                                      
+                                   </div>
+                               </div>
+
+									
+ <p>Used for Ecommerce and retail supermarkets through vision based inspection</p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="row">
+                      
+                        <div class="col-lg-4">
+                            <div class="test-inner ">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-4.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>Auto nomous Flying</h4>
+                                     
+                                   </div>
+                               </div>
+
+									<P>Mainly used for aerial view capturing and object recognition through drones</P>
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="test-inner">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-5.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>Robotics</h4>
+                                      
+                                   </div>
+                               </div>
+
+									 <P>Used as robotic arms for material handling at warehouse or assembly plants</P>
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="test-inner">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-6.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>Security</h4>
+                                       
+                                   </div>
+                               </div>
+									<p>Mainly used to keep monitoring the objects through automated security cameras</p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+						
+						<div class="col-lg-5">
+                            <div class="test-inner">
+                               <div class="test-author-thumb d-flex">
+                                   <img src="images/client/test-7.jpg" alt="Testimonial author" class="img-fluid">
+                                   <div class="test-author-info">
+                                       <h4>E Commerce</h4>
+                                       
+                                   </div>
+                               </div>
+									<p>Used as robotics in agriculture for soil monitoring, crop harvesting or yield analysis</p>
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!--
+ <section class="section" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <div class="section-heading">
+                        <!-- Heading 
+                        <h2 class="section-title">
+                            Read our latest news
+                        </h2>
+
+                        <!-- Subheading 
+                        <p>
+                            Our duty towards you is to share our experience we're reaching in our work path with you.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- / .row 
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-1.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <h6> 17 October 2018</h6>
+                                <a href="#">
+                                    <h3 class="card-title">Top tips to speed up your site in a speedy time</h3>
+                                </a>
+                                <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-2.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <h6> 17 October 2018</h6>
+                                <a href="#">
+                                    <h3 class="card-title">Brand your site value with marketing strategies</h3>
+                                </a>
+
+                                <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>
+                                 <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-3.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content">
+                                <h6> 17 October 2018</h6>
+                                <a href="#">
+                                    <h3 class="card-title">Website Optimization is very essential for site speed</h3>
+                                </a>
+                                <p>There are many variations of passages Lorem Ipsum available, but majority have ama suffered altratio. the lorem.</p>
+                                 <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+	
+<section id="about" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+				
+				<h1 style="color:white;">ENGAGEMENT</h1>
+				<br/>
+                    <div class="img-block">
+                        <img src="images/blur_edges.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 pt-6 col-md-12">
+                    <div class="row justy-content-center">
+                        <div class="col-lg-6 col-sm-6 col-md-6 mb-5">
+                            <div class="text-center about-block">
+                                <div class="img-icon mb-4">
+                                     <i class="ti-user"></i>
+                                </div>
+                                <h4 class="mb-2"style="color:white;">Dedicated Team / FTE Based</h4>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6 col-md-6 mb-5">
+                            <div class="text-center about-block">
+                                <div class="img-icon mb-4">
+                                   <i class="ti-bookmark-alt"></i>
+                                </div>
+                                <h4 class="mb-2" style="color:white;">Project Based</h4>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="text-center about-block">
+                                <div class="img-icon mb-4">
+                                    <i class="ti-wallet"></i>
+                                </div>
+                                <h4 class="mb-2" style="color:white;">Pay Per Item (Line, Image) Model</h4>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="text-center about-block">
+                                <div class="img-icon mb-4">
+                                    <i class="ti-dashboard"></i>
+                                </div>
+                                <h4 class="mb-2" style="color:white;">Hourly Rate</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="section" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 text-center">
+                    <div class="section-heading">
+                        <!-- Heading -->
+                        <h2 class="section-title">
+                            Why WPICS
+                        </h2>
+
+                        <!-- Subheading -->
+                       
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-1.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content" style="text-align:center">
+                               
+                                <a href="#">
+                                    <h3 class="card-title">Dedicated Team & Experience</h3>
+                                </a>
+                                <p>With a team led by a team lead, project management and SME , to ensure quality, accuracy, and scale
+In house team that is highly trained and experienced in annotation and data enrichment services.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-2.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content" style="text-align:center">
+                               
+                                <a href="#">
+                                    <h3 class="card-title">Process & Assured Quality</h3>
+                                </a>
+
+                                <p>Get the best in class quality services with highest accuracy level delivering an excellence in data annotation through multiple stages of auditing and reviewing of labeled data.
+Our team uses of the latest tools and methodologies to streamline business process for best results.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="blog-box">
+                        <div class="blog-img-box">
+                            <img src="images/blog/blog-3.jpg" alt="" class="img-fluid blog-img">
+                        </div>
+                        <div class="single-blog">
+                            <div class="blog-content" style="text-align:center">
+                                
+                                <a href="#">
+                                    <h3 class="card-title">Security & IP Protectione</h3>
+                                </a>
+                                <p>High Standards of enterprise grade security and confidentiality with access cards, video surveillance, no mobile phones or notebooks allowed, means that privacy of your data is guaranteed.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    
+    
+    <!--  Page Scroll to Top  -->
+    
+    <a class="scroll-to-top js-scroll-trigger" href="#top-header">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    
+    
+    
+    
+    
+    <!-- 
+        Essential Scripts
+        =====================================-->
+        <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+            </script>
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Map Js -->
+    <script src="plugins/google-map/gmap3.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+
+    <script src="js/form/contact.js"></script>
+    <script src="js/theme.js"></script>
+
   </body>
-</html>
+  </html>
+   
