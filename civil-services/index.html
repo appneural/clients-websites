@@ -1,60 +1,1045 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <!-- Basic -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>example.com</title>
-    <style>
-      html, body {
-        height: 100%;
-      }
-      body {
-        background-color: #fff;
-        background: radial-gradient(circle at center, #fff 0%, #f8f8f8 75%, #ebebeb 100%);
-        color: #222;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      main {
-        padding: 1rem;
-        text-align: center;
-      }
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        margin: 0;
-      }
-      @media screen and (max-width: 480px) {
-        h1 {
-          font-size: 1.5rem;
-        }
-      }
-      h1::after {
-        content: "";
-        background-color: #ffe800;
-        background: repeating-linear-gradient(45deg, #ffe800, #ffe800 0.5rem, #222 0.5rem, #222 1.0rem);
-        display: block;
-        height: 0.5rem;
-        margin-top: 1rem;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      p {
-        margin: 1rem 0 0 0;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>example.com</h1>
-      <p>Our website is under construction.</p>
-    </main>
-  </body>
+
+    <!-- Site Metas -->
+    <title>Civil Service</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/civil.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <!-- <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="course-grid-3.html">Course</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acadmics.html">Acadmics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Content</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Book Now</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+    <div id="first"></div>
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol> -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-right">
+                                    <div class="big-tagline">
+                                        <h2>Best<strong>IAS Coaching </strong> for UPSC Civil Services Preparation</h2>
+                                        <a href="contact.html" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="about.html" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Learning Begins With Us</h3>
+                </div>
+            </div><!-- end title -->
+
+            <div class=" flex flex-row row">
+                <div class="leading-8 col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                        We, at Champion School offer supportive and
+                        inspirational
+                        environments for
+                        young
+                        enquiring minds to
+                        learn and grow with
+                        us. Our passion for learning means we achieve more than outstanding results. We strive to build
+                        confident and creative
+                        thinkers and aim at delivering an education that is truly relevant to their future.
+                    </p>
+                </div>
+                <br><br>
+                <div class="leading-8 col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                        We are an early learning academy focused on
+                        social-emotional development
+                        and
+                        early literacy and
+                        numeracy. Our students
+                        walk out with the character and confidence to make their mark in the world, equipped with the
+                        knowledge and real-world
+                        skills that take them way ahead in the industry they may serve.
+                    </p>
+                </div>
+            </div>
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <button type="button" class="btn btn-primary text-white bg-black mt-20">Know More</button>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="section flex justify-center bg-gray-100">
+        <img src="images/intro.jpg" alt="">
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Curriculum Overview</h3>
+                </div>
+            </div>
+            <div class="section-title row text-center">
+                <div class="col-8 offset-md-2">
+                    <p class="lead">The Champion School aims at offering all our students a broad and balanced
+                        curriculum that provides rewarding and
+                        stimulating activities to prepare them for the best social and cultural life.</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis">
+
+            <div class="row flex justify-center">
+                <div class="col-lg-3  col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/cs.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2 style="font-size: 20 ;">Computer Science</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p>Hands-on experience with the latest programming languages and technology. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/fa.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2>Fine Arts</h2>
+                            </div>
+                            <div class="blog-desc">
+                                <p>Giving wings to the artists who’d like to take it up as a career or just a hobby.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/hu.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2>Humanities</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p>The study of ancient and modern languages, philosophy, history, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr3">
+
+            <div class="row flex justify-center">
+                <div class="col-lg-3  col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/scie.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2>Science</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p>The study that encourages scientific reasoning, discoveries and inventions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/math.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2>Mathematics</h2>
+                            </div>
+                            <div class="blog-desc">
+                                <p>Understanding the game of numbers and logic to solve real-world problems. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+
+                <div class="col-lg-3 col-md-6 col-12 gap-7">
+                    <div class="course-item">
+                        <div class="image-blog">
+                            <img src="images/Curriculum/lang.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2>Languages</h2>
+                            </div>
+                            <div class="course-desc">
+                                <p>Learning more modes of communication from different parts of the world. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+            <!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <div class="flex justify-center my-10 h-">
+        <q style="font-size:24px ;">
+            <cite>We aim at inspiring our students to dream more, learn more, do more, and
+                become
+                more in their respective
+                journeys of
+                life.
+            </cite>
+        </q>
+    </div>
+
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="row align-items-center ml-16">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mr-20">
+                    <div class="post-media wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <img src="images/school-template-activities-img.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2 style="margin-bottom: 20px ;">Our Co-curricular <br> Activities</h2>
+                        <ul>
+                            <li style="font-size: 24px;"> <i class="fa fa-circle"></i> Athletics
+                            </li>
+                            <li style="font-size: 20px; margin-bottom: 20px; "> Our students are passionate about sports
+                                and athletics and have the <br> freedom to
+                                choose
+                                the
+                                one they like and wish to take
+                                up.</li>
+                            <li style="font-size: 24px;"> <i class="fa fa-circle"></i> In-house
+                                Publications</li>
+                            <li style="font-size: 20px; margin-bottom: 20px; ">We have several writers who are
+                                encouraged to come up with <br> creations that are
+                                regularly
+                                published in our in-house
+                                magazines.</li>
+                            <li style="font-size: 24px;"> <i class="fa fa-circle"></i> Performing
+                                Arts & Music</li>
+                            <li style="font-size: 20px; margin-bottom: 20px; ">With professionals on board, we take
+                                pride in training our students in <br> art forms
+                                like
+                                dance,
+                                drama, painting and more.</li>
+                        </ul>
+                        <!-- <a href="#" class="hover-btn-new orange"><span>Learn More</span></a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+    <!-- gallery -->
+
+    <div class="gallery-image">
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=444" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Library</p>
+                    <p class="opacity-low">Architect Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=444" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Library</p>
+                    <p class="opacity-low">Architect Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=444" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Library</p>
+                    <p class="opacity-low">Architect Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=232" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Night Sky</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250/?image=431" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Tea Talk</p>
+                    <p class="opacity-low">Composite</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=474" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Road</p>
+                    <p class="opacity-low">Landscape</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=344" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Sea</p>
+                    <p class="opacity-low">Cityscape</p>
+                </div>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=494" alt="" />
+            <div class="transparent-box">
+                <div class="caption">
+                    <p>Vintage</p>
+                    <p class="opacity-low">Cinematic</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="">
+                <div></div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <!-- <section class="section lb page-section">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Our history</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                        lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline__wrap">
+                    <div class="timeline__items">
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2018</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2015</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2014</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>2012</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2010</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2007</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2004</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>2002</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <div class="section cl">
+        <div class="container">
+            <div class="row text-left stat-wrap">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-study"></i></span>
+                    <p class="stat_count">12000</p>
+                    <h3>Students</h3>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-online"></i></span>
+                    <p class="stat_count">240</p>
+                    <h3>Courses</h3>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-years"></i></span>
+                    <p class="stat_count">55</p>
+                    <h3>Years Completed</h3>
+                </div>
+            </div>
+        </div>
+    </div>end section -->
+
+    <!-- <div id="plan" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Choose Your Plan</h3>
+                <p>Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="message-box">
+                        <ul class="nav nav-pills nav-stacked" id="myTabs">
+                            <li><a class="active" href="#tab1" data-toggle="pill">Monthly Subscription</a></li>
+                            <li><a href="#tab2" data-toggle="pill">Yearly Subscription</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="invis">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div class="tab-pane active fade show" id="tab1">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$45</h2>
+                                            <h3>per month</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$59</h2>
+                                            <h3>per month</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>150</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>65GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>60</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>30</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$85</h2>
+                                            <h3>per month</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab2">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$477</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$485</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>150</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>65GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>60</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>30</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>$500</h2>
+                                            <h3>Year</h3>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <p><i class="fa fa-envelope-o"></i> <strong>250</strong> Email Addresses</p>
+                                            <p><i class="fa fa-rocket"></i> <strong>125GB</strong> of Storage</p>
+                                            <p><i class="fa fa-database"></i> <strong>140</strong> Databases</p>
+                                            <p><i class="fa fa-link"></i> <strong>60</strong> Domains</p>
+                                            <p><i class="fa fa-life-ring"></i> <strong>24/7 Unlimited</strong> Support
+                                            </p>
+                                        </div>
+                                        <div class="pricing-table-sign-up">
+                                            <a href="#" class="hover-btn-new orange"><span>Order Now</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h3>बिनोद कुमार</h3>
+                                <h4>IRTS</h4>
+                            </div>
+                            <div class="desc">
+                                <!-- <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3> -->
+                                <p class="lead">मैंने सिविल सर्विसेस एकेडमी से आईएएस की कोचिंग लिया और इसमे मुझे 2012
+                                    में सफलता मिली इस लिए डॉ. रंजीत वर्मा सर और उन
+                                    टीम का आभारी हूं</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h3>बिन्दु बाला राजावत</h3>
+                                <h4>SDM प्रतापगढ़</h4>
+                            </div>
+
+
+                            <div class="desc">
+                                <!-- <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3> -->
+                                <p class="lead">उदयपुर जैसे छोटे शहर में सी एस ए के निर्देशक डॉ. रंजीत वर्मा सर के
+                                    निर्देशन में मैंने आईएएस संपूर्ण तेयारी किया और मुजे
+                                    सफलता मिली! इसके लिए सीएसए टीम को धन्यवाद</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h3>डॉ। कल्पना शर्मा</h3>
+                                <h4>DTO उदयपुर</h4>
+                            </div>
+                            <div class="desc">
+                                <!-- <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3> -->
+                                <p class="lead">"मैने RAS की पुरी तैयारी प्रारम्भ से प्री एंड मेंस, इंटरव्यू डॉ. रंजीत
+                                    वर्मा सर के निर्देश में की है! मुजे ये सफ़लता
+                                    मिली! इसके लिए मैं रंजीत वर्मा सर एव संस्थान के अन्य शिक्षकों का आभारी हूं</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h3>अतुल साहू </h3>
+                                <h4>​रैंक -74</h4>
+                            </div>
+                            <div class="desc">
+                                <!-- <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3> -->
+                                <p class="lead">आर ए एस 2012 प्रियोगीता परीक्षा में सफ़लता प्रप्त करने का पूरा श्रेय
+                                    अपने परिजन, गुरुजन और मित्रो को देता हूं इसमे सबसे
+                                    महत्वपूर्ण योगदान रंजीत वर्मा सर का रहा! मैंने अपनी पूरी तैयरी के दोरान सिविल
+                                    सर्विसेज अकादमी, उदयपुर से मार्गदर्शन लिया और अपने प्रथम प्रयास में सफलता अर्जित की
+                                </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+
+                        <!-- end testimonial -->
+                        <!-- </div> -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h3>विपुल जोशी</h3>
+                                <h4>CDPO</h4>
+                            </div>
+                            <div class="desc">
+                                <!-- <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3> -->
+                                <p class="lead">रंजीत वर्मा सर के मार्गदर्शन में मैंने आर एस ए की कोचिंग सी एस ए से किया
+                                    और मुझे सफलता मिली इसाका श्रेय वर्मा सर को
+                                    जाता है</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>James Fernando </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly
+                                    skilled, and experienced & professional team.</p>
+                            </div> -->
+                        <!-- end testi-meta -->
+                        <!-- </div> -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Civil Services Acadmey</h3>
+                        </div>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Main Office</h3>
+                        </div>
+                        <ul class="footer-links">
+
+                            <li><a href="#">9.00 am - 7.00 pm</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@yoursite.com</a></li>
+                            <li><a href="#">9887268229</a></li>
+                            <li><a href="#">8306415329</a></li>
+                            <li>117, Anand Plaza, Univercity Road, Udaipur (Raj.)</li>
+                        </ul>
+                    </div>
+                                </div>
+
+    </div>
+    </div>
+    </footer> -->
+    <!-- end footer -->
+    <div id="third"></div>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#first").load("header.html");
+            $("#third").load("footer.html");
+        });
+    </script>
+</body>
+
 </html>
