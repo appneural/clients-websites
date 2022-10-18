@@ -4114,7 +4114,7 @@ a.link-style3 {
 }
 
 .transparent-box {
-    height: 250px;
+    /* height: 250px; */
     width: 350px;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
