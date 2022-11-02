@@ -5193,7 +5193,9 @@ input:-webkit-autofill:focus {
     margin-right: auto;
 }
 
-.single-gallery-item {}
+.single-gallery-item {
+    border: 1px solid black;
+}
 
 .single-gallery-item .img-holder {
     position: relative;
