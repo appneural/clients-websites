@@ -2773,7 +2773,7 @@ input:-webkit-autofill:focus {
 */
 
 .breadcrumb-area {
-    background: rgba(0, 0, 0, 0) url("../img/resources/breadcrumb-bg.jpg") no-repeat center center;
+    background: rgba(0, 0, 0, 0) url("../img/resources/bannder.jpg") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     padding-bottom: 97px;
