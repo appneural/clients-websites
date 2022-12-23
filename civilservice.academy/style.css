@@ -943,6 +943,7 @@ a img.aligncenter {
 }
 
 .first-section {
+    height: 900px;
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -1030,6 +1031,9 @@ a img.aligncenter {
 .dtab {
     display: table-cell;
     vertical-align: middle;
+    top: 250px;
+    position: absolute;
+    right: 100px;
 }
 
 
